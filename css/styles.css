@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.cabezote
+{
+    background-color:#7ac9fa;
+    border-radius: 16px;
+    grid-area: 1/1/span 1/span 4;
+    display: grid;
+    grid: 100% / 30% 40% 30%;
+    gap: 2px;
+    
+     box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3); 
+     height: 15vh;
+}
+#titleIni{
+  width: 20vw;
+  height: 100vh;
+  /* border-radius: 10% 10% 10% 10%;  */
+}
+.logoUptc_cabecero, .logoLic_cabecero, h2
+{
+    /* border-radius: 10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+
+}
+
+.logoUptc_cabecero
+{
+    /* border-right:  double #00747C; */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+.logoLic_cabecero
+{
+    /* border-left:  double #00747C; */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.logoUptc_cabecero img, .logoLic_cabecero img
+{
+    box-sizing: border-box;
+    margin: 1%;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Pagina de introduccion */
+h1
+{
+    background-color: transparent;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #202022;
+}
+
+h2
+{
+    background-color: transparent;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #202022;
+}
+
+h3
+{
+    background-color: transparent;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #202022;
+}
+
+p
+{
+  font-family: "Permanent Marker", cursive;
+}
+.separador {
+  background-color: #EDCB54;
+  display: grid;
+  grid-area: 2/1/span 1/span 4;
+  height: 20px;
+  box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+
+}
+
+#pregunta
+{
+
+    background-color: transparent;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #202022;
+}
+
+
+.hero {
+  height: 70vh;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.411), rgba(16, 16, 16, 0.411)), url(../img/FondoInicio.jpg);/*permite crear imágenes con degradados de colores en línea recta con dos o más colores*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  display: grid;
+  grid-area: 2/1/span 3/span 4;
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative;
+  /* height: 450px; */
+}
+
+
+.hero .info-content {
+  grid-column: 5/ 8;
+  /* grid-row: 3 / 7; */
+  color: #fff;
+  z-index: 1;
+  margin-top: 50px;
+}
+.hero .info-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+}
+.hero .info-content h1 {
+  font-weight: 900;
+  font-size: 4em;
+  color: #EDCB54;
+}
+.hero .info-content p {
+  font-family: 'Montserrat', sans-serif;
+  font: bold;
+  font-style: oblique;
+}
+.hero .info-content .btn {
+  font-size: 1em;
+  color:#fff;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border:1px solid#EDCB54;
+  margin-top: 10px;
+}
+.hero .info-content .btn:hover {
+  background-color: #EDCB54;
+  color:#181818;
+}
+#imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Ajusta la altura de la imagen según sea necesario */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.piePagina {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-color: #181818;
+  color: #fff;
+  grid-template-areas: 
+    "_________ follow-me social-network" 
+}
+.piePagina .siguiente {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  background-color: #EDCB54;
+  color:#181818;
+  padding: 26px;
+}
+.piePagina .siguiente .fas {
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+.piePagina h2 {
+  grid-template-areas: follow-me;
+  text-align: center;
+}
+.piePagina .creditos {
+  grid-template-areas: social-network;
+}
+.piePagina .creditos .fab {
+  font-size: 1.4em;
+  color: #EDCB54;
+  margin-right: 15px;
+  justify-content: flex-end;
+}
+
+.siguiente a
+{
+  text-decoration: none;
+}
+
+/* PopUp */
+.popUp
+{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    margin: -4px;
+    border-radius: 16px;
+    z-index: 3;
+}
+
+.contenedorPopUp
+{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    background-color: beige;
+
+
+}
+
+.iconoCancelar
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#imgCreditos
+{
+  width: 60vw;
+}
+
+.contenedorPopUpCreditos
+{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    background-image: url(../img/fondoCreditos.jpg);
+
+
+}
+

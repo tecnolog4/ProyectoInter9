@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 1 - Actividades</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/estiloMenuPrinc.css" />
+  <link rel="stylesheet" href="css/estiloUnidades.css">
+  <link rel="stylesheet" href="css/estiloArrastre.css">
+  <link rel="stylesheet" href="css/audio.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  </style>
+</head>
+
+<body>
+  <div id class="contenedor-padre">
+    <header id="cabezote" class="cabezote">
+      <div class="logoUptc_cabecero">
+        <img src="img/logoUPTC.png" alt="logo uptc" />
+      </div>
+      <h2><img id="titleIni" src="img/TittleArriba.png" alt="TituloArriba"></h2>
+      <div class="logoLic_cabecero">
+        <img src="img/LogoLic.png" alt="" />
+      </div>
+    </header>
+
+    <!-- audio -->
+    <div id="botonAudioMenuPrin" onclick="toggleAudio()">
+      <span id="iconoAudio" class="material-symbols-outlined">volume_up</span>
+    </div>
+    <audio id="miAudio" src="audios/audio_actividades.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+
+
+
+    <main class="contenido">
+      <div id="contenido1" class="contenidoUnidades contenido_pagina1">
+        <nav class="menu_pagina">
+          <ul>
+            <a href="unidad1.html">
+              <li class="btnSubMenu">Unidad 1</li>
+            </a>
+            <li class="btnSubMenu" id="btn0Pa1Act0">Actividad 1</li>
+            <li class="btnSubMenu" id="btn1Pa1Act1">Actividad 2</li>
+            <li class="btnSubMenu" id="btn2Pa1Act2">Actividad 3</li>
+
+          </ul>
+        </nav>
+
+        <div class="contenedor_actividades_pagina1">
+
+          <div class="contenedor_actividades_pagina1_actividad" id="pag1Actividad0">
+            <h3 style="text-align: center;">Cuadrado mágico</h3>
+            <p><b>La suma de los números debe ser 15</b></p>
+            <p id="informacion"></p>
+            <div id="cuadradoMagico">
+              <img src="img/ocho.png" class="imgCuadraMag" alt="Ocho">
+              <div id="uno" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado1(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="seis" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado1(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="tres" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado1(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="cinco" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado1(event)"
+                ondragover="allowDrop(event)"></div>
+              <img src="img/siete.png" class="imgCuadraMag" alt="Siete">
+              <img src="img/cuatro.png" class="imgCuadraMag" alt="Cuatro">
+              <div id="nueve" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado1(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="dos" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado1(event)"
+                ondragover="allowDrop(event)"></div>
+
+
+            </div>
+
+            <div>
+              <!-- Asigna un ID único a cada imagen -->
+              <img src="img/uno.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numUno" draggable="true"
+                alt="Uno">
+              <img src="img/dos.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numDos" draggable="true"
+                alt="Dos">
+              <img src="img/tres.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numTres" draggable="true"
+                alt="Tres">
+              <!-- <img src="imagenes/cuatro.png" ondragstart="dragStart(event)" id="numCuatro" draggable="true" alt="Cuatro"> -->
+              <img src="img/cinco.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numCinco"
+                draggable="true" alt="Cinco">
+              <img src="img/seis.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numSeis" draggable="true"
+                alt="Seis">
+              <!-- <img src="imagenes/siete.png" ondragstart="dragStart(event)" id="numSiete" draggable="true" alt="Siete"> -->
+              <!-- <img src="imagenes/ocho.png" ondragstart="dragStart(event)" id="numOcho" draggable="true" alt="Ocho"> -->
+              <img src="img/nueve.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numNueve"
+                draggable="true" alt="Nueve">
+            </div>
+          </div>
+
+          <!-- </div> -->
+          <div class="contenedor_actividades_pagina1_actividad" id="pag1Actividad1">
+            <h3 style="text-align: center;">Cuadrado mágico</h3>
+            <p><b>La suma de los números debe ser 24</b></p>
+            <p id="informacion2"></p>
+            <div id="cuadradoMagico">
+              <img src="img/once.png" class="imgCuadraMag" alt="once">
+              <div id="cuatro" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado2(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="nueve" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado2(event)"
+                ondragover="allowDrop(event)"></div>
+
+              <div id="seis" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado2(event)"
+                ondragover="allowDrop(event)"></div>
+              <img src="img/ocho.png" class="imgCuadraMag" alt="ocho">
+              <img src="img/diez.png" class="imgCuadraMag" alt="diez">
+
+              <div id="siete" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado2(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="doce" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado2(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="cinco" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado2(event)"
+                ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div>
+              <!-- Asigna un ID único a cada imagen -->
+              <img src="img/cuatro.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numCuatro"
+                draggable="true" alt="cuatro">
+              <!-- <img src="img/uno.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numUno" draggable="true" alt="cuatro"> -->
+              <img src="img/siete.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numSiete"
+                draggable="true" alt="siete">
+              <!-- <img src="img/doce.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numDoce" draggable="true" alt="doce"> -->
+              <img src="img/nueve.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numNueve"
+                draggable="true" alt="nueve">
+              <img src="img/dos.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numDos" draggable="true"
+                alt="nueve">
+              <img src="img/seis.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numSeis" draggable="true"
+                alt="seis">
+              <!-- <img src="img/diez.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numDiez" draggable="true" alt="diez"> -->
+              <img src="img/cinco.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numCinco"
+                draggable="true" alt="cinco">
+
+            </div>
+          </div>
+          <div class="contenedor_actividades_pagina1_actividad" id="pag1Actividad2">
+            <h3 style="text-align: center;">Cuadrado mágico</h3>
+            <p><b>La suma de los números debe ser 18</b></p>
+            <p id="informacion3"></p>
+            <div id="cuadradoMagico">
+
+              <div id="tres" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="ocho" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="siete" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+
+              <img src="img/diez.png" class="imgCuadraMag" alt="diez">
+              <div id="seis" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+              <div id="dos" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+
+              <div id="cinco" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+              <img src="img/cuatro.png" class="imgCuadraMag" alt="diez">
+              <div id="nueve" class="soltar soltar_numero imgCuadraMag" ondrop="soltarNumCuadrado3(event)"
+                ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div>
+              <!-- Asigna un ID único a cada imagen -->
+              <img src="img/tres.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numTres" draggable="true"
+                alt="tres">
+              <img src="img/ocho.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numOcho" draggable="true"
+                alt="ocho">
+              <img src="img/siete.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numSiete"
+                draggable="true" alt="siete">
+              <!-- <img src="img/doce.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numDoce" draggable="true" alt="doce"> -->
+              <img src="img/nueve.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numNueve"
+                draggable="true" alt="nueve">
+              <img src="img/dos.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numDos" draggable="true"
+                alt="nueve">
+              <img src="img/seis.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numSeis" draggable="true"
+                alt="seis">
+              <!-- <img src="img/uno.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numUno" draggable="true" alt="uno"> -->
+              <img src="img/cinco.png" class="imgCuadraMag" ondragstart="dragStart(event)" id="numCinco"
+                draggable="true" alt="cinco">
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </main>
+
+    <footer>
+      <div id="btnMenu" onclick="unidadUnoAct()">
+        <a href="menuPrincipal.html"><span class="material-symbols-outlined boton_menu boton_menu--home">menu</span></a>
+      </div>
+      <div id="btnAtras" onclick="unidadUnoAct()">
+        <a href="unidad1.html"><span
+            class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span></a>
+
+        <!-- <span class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span> -->
+      </div>
+      <div id="btnSiguiente" onclick="unidadUnoAct()">
+        <a href="unidad2.html"><span
+            class="material-symbols-outlined boton_menu boton_menu--siguiente">arrow_forward_ios</span>
+        </a>
+      </div>
+
+      <div id="btnInfo">
+        <span class="material-symbols-outlined boton_menu boton_menu--info">info</span>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="javascript/desplazamiento.js"></script>
+<script src="javascript/arrastre.js"></script>
+<script src="javascript/submenupag1.js"></script>
+<script src="javascript/audios.js"></script>
+
+</html>

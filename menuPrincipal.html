@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/estiloMenuPrinc.css" />
+  <link rel="stylesheet" href="css/audio.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  </style>
+</head>
+
+<body>
+  <div id class="contenedor-padre">
+    <header id="cabezote" class="cabezote">
+      <div class="logoUptc_cabecero">
+        <img src="img/logoUPTC.png" alt="logo uptc" />
+      </div>
+      <h2><img id="titleIni" src="img/TittleArriba.png" alt="TituloArriba"></h2>
+      <div class="logoLic_cabecero">
+        <img src="img/LogoLic.png" alt="" />
+      </div>
+    </header>
+    <!-- Audios -->
+    <div id="botonAudioMenuPrin" onclick="toggleAudio()">
+      <span id="iconoAudio" class="material-symbols-outlined">volume_up</span>
+    </div>
+    <audio id="miAudio" src="audios/audio_menuPrin.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+
+
+
+    <main class="contenido contenidoUnidades">
+
+      <div>
+        <img src="img/fondoMenu.jpg" class="imgMenu">
+      </div>
+
+      <div class="unidades" id="uni1">
+        <a href="unidad1.html"><img class="ud" src="img/Unidad1.png" alt="Unidad1"></a>
+
+      </div>
+      <div class="unidades" id="uni2">
+        <a href="unidad2.html"><img class="ud" src="img/Unidad2.png" alt="Unidad2"></a>
+
+      </div>
+      <div class="unidades" id="uni3">
+        <!-- <img class="ud" src="img/Unidad3.png" alt="Unidad3"> -->
+        <a href="unidad3.html"><img class="ud" src="img/Unidad3.png" alt="Unidad3"></a>
+
+      </div>
+
+    </main>
+    <!-- PopUP -->
+    <div id="popup" class="popUp">
+      <div id="contenedorPopUp" class="contenedorPopUp">
+        <div class="iconoCancelar">
+          <span id="btnCancelar" class="material-symbols-outlined">cancel</span>
+        </div>
+
+        <h2>Creditos</h2>
+        <h2>Nombre</h2>
+        <h2>Fotografia</h2>
+
+        <h2>Recargar la pagina info</h2>
+
+      </div>
+    </div>
+
+    <footer>
+      <div id="btnHome" onclick="inicio()">
+        <a href="index.html"><span class="material-symbols-outlined boton_menu boton_menu--home">home</span></a>
+      </div>
+      <div id="btnAtras" onclick="menuPrinc()">
+        <a href="index.html"><span
+              class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span></a>
+
+          <!-- <span class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span> -->
+      </div>
+        <div id="btnSiguiente" onclick="menuPrinc()">
+          <a href="unidad1.html"><span
+              class="material-symbols-outlined boton_menu boton_menu--siguiente">arrow_forward_ios</span></a>
+        </div>
+
+        <div id="btnInfo">
+          <span class="material-symbols-outlined boton_menu boton_menu--info">info</span>
+        </div>
+
+
+
+      </footer>
+</body>
+<script src="javascript/desplazamiento.js"></script>
+<script src="javascript/audios.js"></script>
+<script src="javascript/popup.js"></script>
+
+
+</html>

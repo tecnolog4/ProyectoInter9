@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 2</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/estiloMenuPrinc.css" />
+  <link rel="stylesheet" href="css/estiloUnidades.css">
+  <link rel="stylesheet" href="css/estiloArrastre.css">
+  <link rel="stylesheet" href="css/audio.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  </style>
+</head>
+
+<body>
+  <div id class="contenedor-padre">
+    <header id="cabezote" class="cabezote">
+      <div class="logoUptc_cabecero">
+        <img src="img/logoUPTC.png" alt="logo uptc" />
+      </div>
+      <h2><img id="titleIni" src="img/TittleArriba.png" alt="TituloArriba"></h2>
+      <div class="logoLic_cabecero">
+        <img src="img/LogoLic.png" alt="" />
+      </div>
+    </header>
+
+    <!-- Audio -->
+    <div id="botonAudioMenuPrin" onclick="toggleAudio()">
+      <span id="iconoAudio" class="material-symbols-outlined">volume_up</span>
+    </div>
+    <audio id="miAudio" src="audios/audio_actividades.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+
+
+    <main class="contenido">
+      <div id="contenido1" class="contenidoUnidades contenido_pagina1">
+        <nav class="menu_pagina">
+          <ul>
+            <a href="unidad2.html">
+              <li class="btnSubMenu">Unidad 2</li>
+            </a>
+            <li class="btnSubMenu" id="btn0Pa1Act0">Actividad 1</li>
+            <li class="btnSubMenu" id="btn1Pa1Act1">Actividad 2</li>
+            <li class="btnSubMenu" id="btn2Pa1Act2">Actividad 3</li>
+
+          </ul>
+        </nav>
+
+        <div>
+
+        </div>
+
+
+        <div class="contenedor_actividades_pagina1">
+          <div class="contenedor_actividades_pagina1_actividad" id="pag1Actividad0">
+
+            <h2>Series lógicas</h2>
+            <div class="panelFig">
+              <img src="img/fig1.png" class="figura" alt="">
+              <img src="img/fig2.png" class="figura" alt="">
+              <img src="img/fig3.png" class="figura" alt="">
+              <!-- <img src="img/interrogante.jpg" id="figuraCorrecta" class="soltar figuraCorrecta" ondrop="soltarFigura(event)" ondragover="allowDrop(event)"> -->
+              <div id="figuraCorrecta" class="soltar figuraCorrecta figura" ondrop="soltarFigura1(event)"
+                ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="opcFig">
+              <img src="img/fig5.png" class="figura" ondragstart="dragStart(event)" id="figuraCinco" draggable="true"
+                alt="figura cinco">
+              <img src="img/fig6.png" class="figura" ondragstart="dragStart(event)" id="figuraSeis" draggable="true"
+                alt="figura seis">
+              <img src="img/fig7.png" class="figura" ondragstart="dragStart(event)" id="figuraSiete" draggable="true"
+                alt="figura siete">
+              <img src="img/fig4.png" class="figura" ondragstart="dragStart(event)" id="figuraCuatro" draggable="true"
+                alt="figura4">
+            </div>
+            <div id="mensaje1"></div>
+          </div>
+
+
+          <div class="contenedor_actividades_pagina1_actividad" id="pag1Actividad1">
+
+            <h2>Series lógicas</h2>
+            <div class="panelFig">
+              <img src="img/figura1.png" class="figura" alt="">
+              <img src="img/figura2.png" class="figura" alt="">
+              <img src="img/figura3.png" class="figura" alt="">
+              <!-- <img src="img/interrogante.jpg" id="figuraCorrecta" class="soltar figuraCorrecta" ondrop="soltarFigura(event)" ondragover="allowDrop(event)"> -->
+              <div id="figuraCorrecta" class="soltar figuraCorrecta figura" ondrop="soltarFigura2(event)"
+                ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="opcFig">
+              <img src="img/figura5.png" class="figura" ondragstart="dragStart(event)" id="figCinco" draggable="true"
+                alt="figura cinco">
+              <img src="img/figura4.png" class="figura" ondragstart="dragStart(event)" id="figCuatro" draggable="true"
+                alt="figura4">
+              <img src="img/figura6.png" class="figura" ondragstart="dragStart(event)" id="figSeis" draggable="true"
+                alt="figura seis">
+              <img src="img/figura7.png" class="figura" ondragstart="dragStart(event)" id="figSiete" draggable="true"
+                alt="figura siete">
+            </div>
+            <div id="mensaje2"></div>
+          </div>
+
+          <!-- </div> -->
+          <div class="contenedor_actividades_pagina1_actividad" id="pag1Actividad2">
+
+            <h2>Series lógicas</h2>
+            <div class="panelFig">
+              <img src="img/figNum8.png" class="figura" alt="">
+              <img src="img/figNum10.png" class="figura" alt="">
+              <img src="img/figNum13.png" class="figura" alt="">
+              <img src="img/figNum17.png" class="figura" alt="">
+              <!-- <img src="img/interrogante.jpg" id="figuraCorrecta" class="soltar figuraCorrecta" ondrop="soltarFigura(event)" ondragover="allowDrop(event)"> -->
+              <div id="figuraCorrecta" class="soltar figuraCorrecta figura" ondrop="soltarFigura3(event)"
+                ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="opcFig">
+              <img src="img/figNum19.png" class="figura" ondragstart="dragStart(event)" id="figNum19" draggable="true"
+                alt="figura cinco">
+              <img src="img/figNum20.png" class="figura" ondragstart="dragStart(event)" id="figNum20" draggable="true"
+                alt="Numero ">
+              <img src="img/figNum22.png" class="figura" ondragstart="dragStart(event)" id="figNum22" draggable="true"
+                alt="numCorrecto">
+              <img src="img/figNum31.png" class="figura" ondragstart="dragStart(event)" id="figNum31" draggable="true"
+                alt="figura siete">
+            </div>
+            <div id="mensaje3"></div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+  
+
+  </main>
+
+  <footer>
+    <div id="btnMenu" onclick="unidadDosAct()">
+      <!-- <a href="index.html" ><span class="material-symbols-outlined boton_menu boton_menu--home">home</span></a> -->
+      <a href="menuPrincipal.html"><span class="material-symbols-outlined boton_menu boton_menu--home">menu</span></a>
+
+    </div>
+    <div id="btnAtras" onclick="unidadDosAct()">
+      <a href="unidad2.html"><span
+          class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span></a>
+
+      <!-- <span class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span> -->
+    </div>
+    <div id="btnSiguiente" onclick="unidadDosAct()">
+      <a href="unidad3.html"><span
+          class="material-symbols-outlined boton_menu boton_menu--siguiente">arrow_forward_ios</span>
+      </a>
+    </div>
+
+    <div id="btnInfo">
+      <span class="material-symbols-outlined boton_menu boton_menu--info">info</span>
+    </div>
+  </footer>
+  </div>
+</body>
+<script src="javascript/desplazamiento.js"></script>
+<script src="javascript/arrastre.js"></script>
+<script src="javascript/submenupag1.js"></script>
+<script src="javascript/audios.js"></script>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 2 Actividades</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/estiloMenuPrinc.css" />
+  <link rel="stylesheet" href="css/estiloUnidades.css">
+  <link rel="stylesheet" href="css/estiloArrastre.css">
+  <link rel="stylesheet" href="css/audio.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  </style>
+</head>
+
+<body class="FondoPrinc">
+  <div id class="contenedor-padre">
+    <header id="cabezote" class="cabezote">
+      <div class="logoUptc_cabecero">
+        <img src="img/logoUPTC.png" alt="logo uptc" />
+      </div>
+      <h2><img id="titleIni" src="img/TittleArriba.png" alt="TituloArriba"></h2>
+      <div class="logoLic_cabecero">
+        <img src="img/LogoLic.png" alt="" />
+      </div>
+    </header>
+
+    <!-- Audio -->
+    <div id="botonAudioMenuPrin" onclick="toggleAudio()">
+      <span id="iconoAudio" class="material-symbols-outlined">volume_up</span>
+    </div>
+    <audio id="miAudio" src="audios/audio_actividades.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+
+    <main class="contenido">
+      <div id="contenido1" class="contenidoUnidades contenido_pagina1">
+        <nav class="menu_pagina">
+          <ul>
+            <a href="unidad3.html">
+              <li class="btnSubMenu">Unidad 3</li>
+            </a>
+          </ul>
+        </nav>
+
+        <div class="contenedor_actividades_pagina1">
+          <div class="contenedor_actividades_pagina1_actividadPregunt" id="pag1Actividad0">
+            <div id="tablero-de-juego">
+              <div id="encabezadoPregunta">
+                <a id="ayuda" class="btn btn-info" onclick="ayuda()">
+                  Ayuda
+                </a>
+
+                <br>
+
+                <span id="pregunta">Aquí va la pregunta</span>
+                <br>
+
+                <img id="imagenPregunt" class="imgPregunt" src="https://i.ibb.co/kh4FD6Z/img.png">
+
+              </div>
+
+              <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)">
+                Opción 1
+              </div>
+              <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)">
+                Opción 2
+              </div>
+              <div class="opcion" id="opcion-3" onclick="seleccionarOpción(2)">
+                Opción 3
+              </div>
+              <div class="opcion" id="opcion-4" onclick="seleccionarOpción(3)">
+                Opción 4
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div id="btnMenu" onclick="unidadTresAct()">
+        <!-- <a href="index.html" ><span class="material-symbols-outlined boton_menu boton_menu--home">home</span></a> -->
+        <a href="menuPrincipal.html"><span class="material-symbols-outlined boton_menu boton_menu--home">menu</span></a>
+  
+      </div>
+      <div id="btnAtras" onclick="unidadTresAct()">
+        <a href="unidad3.html"><span
+            class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span></a>
+  
+        <!-- <span class="material-symbols-outlined boton_menu boton_menu--anterior">arrow_back_ios</span> -->
+      </div>
+      <div id="btnSiguiente" onclick="unidadTresAct()">
+        <a href="unidad3.html"><span
+            class="material-symbols-outlined boton_menu boton_menu--siguiente">arrow_forward_ios</span>
+        </a>
+      </div>
+  
+      <div id="btnInfo">
+        <span class="material-symbols-outlined boton_menu boton_menu--info">info</span>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="javascript/desplazamiento.js"></script>
+<script src="javascript/submenupag1.js"></script>
+<script src="javascript/audios.js"></script>
+<!-- <script src="javascript/arrastre.js"></script> -->
+<script src="javascript/submenupag1.js"></script>
+<script src="javascript/base-de.preguntas.js"></script>
+<script defer src="javascript/preguntas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+
+
+</html>

@@ -1,0 +1,101 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');</style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body >
+
+    <div id class="contenedor-padre">
+
+      <div id="popup" class="popUp">
+        <div id="contenedorPopUp" class="contenedorPopUpCreditos">
+          <div class="iconoCancelar">
+            <span id="btnCancelar" class="material-symbols-outlined" style="color: aliceblue;">cancel</span>
+          </div>
+  
+          <img id="imgCreditos" src="img/Créditos.png" alt="">
+  
+        </div>
+      </div>
+      <header id="cabezote" class="cabezote">
+        <div class="logoUptc_cabecero">
+            <img src="img/logoUPTC.png" alt="logo uptc">
+        </div>
+        <h2><img id="titleIni" src="img/TittleArriba.png" alt="TituloArriba"></h2>
+        <div class="logoLic_cabecero">
+            <img src="img/LogoLic.png" alt=""> 
+        </div>
+     </header>
+     <div class="separador">  </div>
+     
+     <!-- Audio -->
+     <div id="botonAudioIntro" onclick="toggleAudio()">
+      <span id="iconoAudio" class="material-symbols-outlined">volume_up</span>
+    </div>
+    <audio id="miAudio" src="audios/audio_intro.mp3" ></audio>
+    </audio>
+
+  <!-- Contenido -->
+     <main class="hero">
+       <div>
+         <img id="imagen" src="img/idea.png" alt="">
+   
+       </div>
+       <div class="info-content" data-aos="fade-up" data-aos-duration="2000">
+         <h1>Constructores del pensamiento</h1>
+         <p>“Aprendemos mejor y trabajamos mejor si disfrutamos lo que estamos haciendo. <br>
+           Pero divertido no tiene que significar fácil. <br> 
+           La mejor diversión es la diversión dura” <br>
+           Seymour Papert</p>
+       </div>
+       
+         <!-- PopUP -->
+   
+     </main>
+   
+   
+       
+   
+       <footer class="piePagina">
+         <div></div>
+         <div id="btnInfo" class="creditos">
+         <h3 style="color: aliceblue;">Créditos</h3>
+           
+          <!-- <div id="btnInfo">
+            <span class="material-symbols-outlined boton_menu boton_menu--info">info</span>
+          </div> -->
+
+         </div>
+         <div class="siguiente" id="btnSiguiente" onclick="inicio()">
+           <a href="menuPrincipal.html" ><h3>Siguiente</h3></a>
+         </div> 
+       
+       </footer>
+      </div>
+    
+
+ 
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript/desplazamiento.js"></script>
+    <script src="javascript/audios.js"></script>
+    <script src="javascript/popup.js"></script>
+    <script>
+      AOS.init();
+
+     
+    </script>
+
+  </body>
+</html>

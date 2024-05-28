@@ -1,0 +1,27 @@
+#botonAudioIntro {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  position: absolute;
+  font-size: 60px; /* Tamaño del ícono */
+  color: white; /* Color del ícono */
+  text-shadow: 0px 0px 5px rgb(230, 12, 12); /* Sombra para mayor visibilidad */
+  z-index: 10; /* Asegura que esté en la primera capa */
+
+}
+
+
+#botonAudioMenuPrin{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  
+    position: absolute;
+    top: 18vh;
+    font-size: 60px; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+    text-shadow: 0px 0px 5px rgb(230, 12, 12); /* Sombra para mayor visibilidad */
+    z-index: 10; /* Asegura que esté en la primera capa */
+  
+  }
